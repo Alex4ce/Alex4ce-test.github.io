@@ -1,0 +1,465 @@
+*,
+*::after,
+::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #343D33;
+}
+
+h1,h2{
+    font-family: 'Libre Baskerville', serif;  
+}
+
+
+/* HEADER -----start------*/
+.header{
+    margin-bottom: 65px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-wrapper{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-left__content h3{
+    font-size: 23px;
+    line-height: normal;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+}
+
+.header-left__content p{
+    color: #333;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.15px;
+}
+
+.header-right__menu{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.header-right__menu > li > a{
+    color: #414840;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+.header-right__menu > li.active > a{
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #475F45;
+}
+/* HEADER -----finish------*/
+
+
+
+/* ADVENTURE SECTION ---start---*/
+.adventure-wrapper{
+    display: flex;
+    margin-bottom: 125px;
+}
+
+.adventure-left{
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.adventure-left__title{
+    max-width: 528px;
+    margin-bottom: 16px;
+}
+
+.adventure-left__text{
+    max-width: 471px;
+    margin-bottom: 32px;
+}
+
+.title{
+    color: #343D33;
+    /* text/extra large title */
+    font-family: Libre Baskerville;
+    font-size: 57px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 62.7px */
+    text-transform: capitalize;    
+}
+
+.text{
+    color: #414840;
+    /* text/large body */
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 37.5px */
+    text-transform: capitalize;    
+}
+
+
+/*button*/
+.btn a{
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.adventure-left__btn{
+    display: flex;
+    gap: 16px;
+}
+
+.btn-green a{
+    background: #475F45;
+    border: 1px solid #475F45;
+    color: white;
+}
+.btn-white a{
+    color: #475F45;
+    border: 1px solid #475F45;
+}
+
+.btn-green-white{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.adventure-right{
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+/* ADVENTURE SECTION ---finish---*/
+
+/* NATURE SECTON ----start-----*/
+.nature{
+    background: #343D33;
+    padding: 96px 0;
+    position: relative;
+}
+
+.nature::after{
+    content: "";
+    background: url("../img/nature-branch.png") 0 0/cover no-repeat;
+    height: 662px;
+    width: 734px;
+    
+    right: 0;
+    bottom: 58px;
+    display: block;
+    position: absolute;
+    opacity: 0.07000000029802322;
+}
+
+.nature > .container{
+    max-width: 1044px;
+    margin: 0 auto;
+}
+
+.nature-wrapper{
+    position: relative;
+    z-index: 1;
+}
+
+.nature-wrapper__top{
+    display: flex;
+    gap: 90px;
+    margin-bottom: 80px;
+}
+
+.nature-wrapper-content{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+}
+
+.nature-wrapper-content__title{
+    color: white;
+    max-width: 417px;
+    font-size: 45px;
+}
+.nature-wrapper-content__text{
+    color: white;
+    max-width: 401px;
+    line-height: 30px;
+    font-size: 20px;
+}
+/* NATURE SECTON ----finish-----*/
+
+
+/* NEWS SECTON ----start-----*/
+.news{
+    padding: 96px 0;
+}
+
+.news__title{
+    color: #343D33;
+    font-size: 45px;
+    margin-bottom: 16px;
+
+}
+.news__text{
+    color:#475F45;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-left: 151px;
+    margin-bottom: 50px;
+}
+
+.news__text::before{
+    content: "";
+    width: 131px;
+    height: 2px;
+    opacity: 0.4000000059604645;
+    background: #475F45;
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+.news__text::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../img/arrow-right.png") no-repeat;
+    position: absolute;
+    top: -4px;
+    right: -32px;
+}
+
+.news-content{
+    display: flex;
+    gap: 50px;
+}
+.news-content__left{
+    max-width: 521px;
+}
+
+.news-content__left__text{
+    width: inherit;
+    padding: 20px 26px 0 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.news-title{
+    color: var(--primary, #475F45);
+    /* text/small title */
+    font-family: Libre Baskerville;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 25.3px */
+}
+
+.news-subtext{
+    color: var(--text-body-copy, #414840);
+    /* text/small body */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+.news-date{
+    color: var(--header-text, #343D33);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+
+
+.news-content__right-box{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    
+}
+
+.news-content__right-box:not(.news-content__right-box:last-child){
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+
+}
+.news-content__right-box__content{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* NEWS SECTON ----finis-----*/
+
+/* pre-footer ----start----*/
+
+.pre-footer{
+    background:  #414840;
+    padding: 48px 0 60px 0;
+}
+
+.pre-footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.pre-footer-left{
+    width: 269px;
+}
+
+.pre-footer-logo{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pre-footer-logo__content{
+    display: flex;
+    flex-direction: column;
+
+}
+.pre-footer-logo__content-title{
+    color: var(--white, #FFF);
+    font-size: 18.896px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.89px;
+    text-transform: uppercase;
+}
+.pre-footer-logo__content-text{
+    color: var(--white, #FFF);
+    font-size: 12.323px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.123px;
+}
+
+.pre-footer-left__text{
+    color: var(--white, #FFF);
+
+/* text/small body */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+}
+
+.pre-footer-middle{
+    padding-left: 30%;
+}
+
+.pre-footer-middle p{
+    color: var(--white, #FFF);
+font-family: Libre Baskerville;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 17.6px */
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+
+.pre-footer-middle nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.pre-footer-middle a{
+    color: var(--white, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pre-footer-right{
+    padding-left: 30%;
+}
+
+.pre-footer-right p{
+    color: var(--white, #FFF);
+font-family: Libre Baskerville;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 110%; /* 17.6px */
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+
+.pre-footer-right .media{    
+    display: flex;
+    gap: 32px;
+}
+
+footer{
+    background: #343D33;
+    padding: 30px 0;
+}
+
+footer p{
+    text-align: center;
+    color: var(--white, #FFF);
+text-align: center;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+/* pre-footer ----finish----*/
